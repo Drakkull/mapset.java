@@ -12,6 +12,13 @@ public class Program {
         cookies.put("email","nervoso@gmail.com");
         cookies.put("address","rua pimpolha 01");
 
+        cookies.remove("email");
+        cookies.put("PC","Intel");
+        System.out.println("Contains 'PC' key: " + cookies.containsKey("PC"));
+        System.out.println("PC Model:  " + cookies.get("PC"));
+        System.out.println("Size:  " + cookies.size());
+
+
         System.out.println("-----All INFO FROM COOKIES DOWN BELOW-------");
 
         for(String key : cookies.keySet()){
